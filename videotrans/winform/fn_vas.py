@@ -69,7 +69,7 @@ def openwin():
                 tmp1 = round((int(h) * 3600000 + int(m) * 60000 + int(s[:2]) * 1000) / video_time, 2)
                 if percent + tmp1 < 99.9:
                     percent += tmp1
-                self.post(type='jd', text=f'{percent}%')
+                self.post(type='jd', text=f'{percent:.2f}%')
                 time.sleep(1)
 
         def run(self):
