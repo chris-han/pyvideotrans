@@ -168,7 +168,7 @@ class Ui_vasrt(object):
         self.backgroundcolor_button.setToolTip(
             '不同播放器下可能不起作用' if config.defaulelang == 'zh' else 'May not work in different players')
 
-        self.bordercolor_button = QtWidgets.QPushButton("边框色" if config.defaulelang == 'zh' else 'Backgroud Colors')
+        self.bordercolor_button = QtWidgets.QPushButton("边框色" if config.defaulelang == 'zh' else 'Border Colors')
         self.bordercolor_button.setCursor(Qt.PointingHandCursor)
         self.bordercolor_button.clicked.connect(self.choose_bordercolor)
         self.bordercolor_button.setToolTip(
@@ -272,6 +272,7 @@ class Ui_vasrt(object):
         if color.isValid():
             self.selected_backgroundcolor = color
             self._setfont()
+            
     def choose_bordercolor(self):
         dialog = QColorDialog(self.selected_bordercolor, self)
         dialog.setOption(QColorDialog.ShowAlphaChannel, True)  # 启用透明度选择
