@@ -1,3 +1,4 @@
+-i https://mirrors.aliyun.com/pypi/simple/
 faster-whisper
 ctranslate2
 aiohttp
@@ -12,18 +13,25 @@ huggingface-hub
 librosa
 multidict
 numpy==1.26
-onnxruntime
+onnxruntime-gpu
 openai
 openai-whisper
 Pillow
 pydub
 pygame
-# Pin PySide6 and shiboken6 to a stable version to avoid ImportError issues
-PySide6==6.6.1
+
 pytz
 PyYAML
 requests
-shiboken6==6.6.1
+pyside6==6.9.1
+pyside6-addons==6.9.1
+pyside6-essentials==6.9.1
+shiboken6==6.9.1
+urllib3
+idna
+multivolumefile
+
+
 soundfile
 SpeechRecognition
 tencentcloud-sdk-python-common
@@ -31,6 +39,22 @@ tencentcloud-sdk-python-tmt
 # torch is not available on PyPI with CUDA support.
 # To install torch with CUDA 12.1, run:
 # uv pip install torch==2.3.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1+cu121
+torchaudio==2.3.1+cu121
+torchvision==0.18.1+cu121
+filelock==3.13.1
+fsspec==2024.6.1
+intel-openmp==2021.4.0
+jinja2==3.1.4
+markupsafe==2.1.5
+mkl==2021.4.0
+mpmath==1.3.0
+networkx==3.3
+sympy==1.13.3
+tbb==2021.11.0
+typing-extensions==4.12.2
+nvidia-cudnn-cu12==9.10.2
+
 zhconv
 azure-cognitiveservices-speech
 pydantic
