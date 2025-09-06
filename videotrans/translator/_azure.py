@@ -47,6 +47,7 @@ class AzureGPT(BaseTrans):
                 api_key=config.params["azure_key"],
                 api_version=config.params['azure_version'],
                 azure_endpoint=config.params["azure_api"],
+                azure_deployment="gpt-4.1-mini",
                 http_client=httpx.Client(proxy=self.proxies)
             )
             text = "\n".join([i.strip() for i in data]) if isinstance(data, list) else data
