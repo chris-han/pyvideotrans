@@ -60,3 +60,4 @@ Thumbs.db
 videotrans/core/
 videotrans/planner/
 videotrans/util/segments.py
+.venv
